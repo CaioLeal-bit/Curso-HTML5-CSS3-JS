@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+
+        body{
+            background-color: purple;
+        }
+
+        #container{
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        .borda{
+            border: 1px solid red;
+        }
+
+        .estatica{
+            position: static;
+        }
+
+        .relativa{
+            position: relative;
+            top: 30px;
+            left: 20px;
+        }
+
+        .absoluta{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+        }
+
+        .fixa{
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="fixa" style="background-color: green;">
+            <h3>Chat</h3>
+            <button>Enviar mensagem</button>
+        </div>
+
+        <h1 class="borda">Fluxo Normal</h1>
+        <p class="borda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+
+        <h1 class="borda relativa">Posição Relativa</h1>
+        <p class="borda relativa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    
+        <h1 class="borda absoluta">Posição Absoluta</h1>
+        <p class="borda absoluta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+
+    </div>
+
+</body>
+</html>
