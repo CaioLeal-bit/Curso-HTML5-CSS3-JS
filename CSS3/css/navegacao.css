@@ -1,0 +1,29 @@
+        #menu ul{
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+        }
+
+        #menu li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 0.5em 1.5em;
+            background-color: #f7b600;
+        }
+
+         #menu li a:hover{
+            color: white;
+            padding-left: 2.5em;
+            background-color: #f99200;
+        }
+
+        #menu li a:active{
+            background-color: #885000;
+        }
+
+        #menu li .selecionado a{ 
+            color: white;
+            padding-left: 2.5em;
+            background-color: #f99200;
+        }
