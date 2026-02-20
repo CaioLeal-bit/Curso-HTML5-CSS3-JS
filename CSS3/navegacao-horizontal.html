@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação Horizontal</title>
+
+    <style>
+
+        #menu ul{
+            list-style: none;
+            padding: 0.5em;
+            width: 720px;
+            background-color: #24252a;
+        }
+
+        #menu ul::after{
+            content: " ";
+            clear: both;
+            display: table;
+        }
+
+        #menu li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 0.5em 1.5em;
+            float: left;
+            margin: 0 0.5em;
+        }
+
+        #menu li a:hover{
+            background-color: #0582ac;
+            border-radius: 1.2em;
+        }
+
+        #menu li a:active{
+            background-color: #7a7a7a;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Menu de Navegação</h1>
+
+    <div id="menu">
+        <ul>
+            <li><a href="navegacao-home.html">Home</a></li>
+            <li><a href="navegacao-produtos.html">Produtos</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
