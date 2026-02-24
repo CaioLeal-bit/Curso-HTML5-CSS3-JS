@@ -19,12 +19,24 @@
             display: grid;
             row-gap: 20px;
             column-gap: 20px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
             grid-template-areas: 
                 'cabecalho cabecalho'
                 'navegacao principal'
                 'rodape rodape'
             ;
+        }
+
+        @media(max-width: 600px){
+                .grid{
+                    grid-template-columns: 1fr ;
+                    grid-template-areas: 
+                        'cabecalho'
+                        'navegacao'
+                        'principal'
+                        'rodape'
+                    ;
+            }
         }
 
         header, nav, main, footer{
@@ -43,7 +55,9 @@
 
     <div class="grid">
         <header> Cabeçalho </header>
-        <nav>Home | produtos | login | cadastro</nav>
+            <nav>
+                menu de navegação
+            </nav>
 
         <main>
             <h2>Conteudo do sistema</h2>
