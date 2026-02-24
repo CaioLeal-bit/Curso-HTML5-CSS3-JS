@@ -1,7 +1,44 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'capa-conteudo capa-imagem'
+        'organizacao-imagem organizacao-conteudo'
+
+    ;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
 header{
+    grid-area: cabecalho;
     display: flex;
     align-items: center;
     padding: 0 10px;
+}
+
+section#capa-conteudo{
+    grid-area: capa-conteudo;
+}
+
+section#capa-imagem{
+    grid-area: capa-imagem;
+}
+
+section#organizacao-imagem{
+    grid-area: organizacao-imagem;
+}
+
+section#capa-imagem > img, section#organizacao-imagem > img {
+    max-width: 100%;
+
+}
+
+section#organizacao-conteudo{
+    grid-area: organizacao-conteudo;
 }
 
 nav{
