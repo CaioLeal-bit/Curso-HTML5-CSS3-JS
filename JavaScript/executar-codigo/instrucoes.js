@@ -10,6 +10,7 @@ Para comentar um bloco de código, deve-se utilizar essa sintaxe.
 
 */
 
+
 let altura = 1.70
 let peso = 70
 //let imc = peso / (altura * altura)
@@ -17,3 +18,8 @@ const pi = 3.14
 
 console.log("O IMC é: " + (peso / (altura * altura)))
 console.log("O valor de pi é: " + pi)
+
+let nome = "Caio" //string
+let numero = 10 //inteiros ou decimais
+let decimal = 3.14 //número decimal
+let booleano = true //true ou false
