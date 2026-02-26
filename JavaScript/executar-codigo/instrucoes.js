@@ -33,7 +33,7 @@ let multiplicacao = numero1 * numero2
 let divisao = numero1 / numero2
 
 console.log("A soma é: " + soma, "A subtração é: " + subtracao, "A multiplicação é: " + multiplicacao, "A divisão é: " + divisao)
-*/
+
 
 let resultado = 10 == 10
 console.log(resultado)
@@ -46,3 +46,10 @@ console.log(resultado3)
 
 let resultado4 = 10 <= 10
 console.log(resultado4)
+*/
+let idade = 17
+if (idade >= 18) {
+    console.log("Você é maior de idade.")
+}else{
+    console.log("Você é menor de idade.")
+}
