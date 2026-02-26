@@ -53,7 +53,7 @@ if (idade >= 18) {
 }else{
     console.log("Você é menor de idade.")
 }
-*/
+
 
 let opcao = 7
 
@@ -77,3 +77,15 @@ switch(opcao){
 let idade = 20
 
 idade>= 18 ? "Maior idade" : "Menor idade"
+*/
+
+function calcularMedia(nota1, nota2, nota3){
+    let totalNotas = nota1 + nota2 + nota3
+    let media = totalNotas / 3
+
+    return media
+}
+
+let media = calcularMedia(7, 8, 9)
+let novaMedia  = media + 1
+console.log("A média é: " + novaMedia)
