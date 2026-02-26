@@ -1,4 +1,4 @@
-console.log("quebre 3 ovos")
+/* console.log("quebre 3 ovos")
 console.log("Misture com a farinha")
 console.log("leve ao forno")
 
@@ -8,7 +8,7 @@ console.log("leve ao forno")
 
 Para comentar um bloco de código, deve-se utilizar essa sintaxe.
 
-*/
+
 
 
 let altura = 1.70
@@ -22,4 +22,14 @@ console.log("O valor de pi é: " + pi)
 let nome = "Caio" //string
 let numero = 10 //inteiros ou decimais
 let decimal = 3.14 //número decimal
-let booleano = true //true ou false
+*/
+
+let numero1 = 10
+let numero2 = 5
+
+let soma = numero1 + numero2
+let subtracao = numero1 - numero2
+let multiplicacao = numero1 * numero2
+let divisao = numero1 / numero2
+
+console.log("A soma é: " + soma, "A subtração é: " + subtracao, "A multiplicação é: " + multiplicacao, "A divisão é: " + divisao)
