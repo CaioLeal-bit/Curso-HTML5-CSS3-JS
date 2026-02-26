@@ -22,7 +22,7 @@ console.log("O valor de pi é: " + pi)
 let nome = "Caio" //string
 let numero = 10 //inteiros ou decimais
 let decimal = 3.14 //número decimal
-*/
+
 
 let numero1 = 10
 let numero2 = 5
@@ -33,3 +33,16 @@ let multiplicacao = numero1 * numero2
 let divisao = numero1 / numero2
 
 console.log("A soma é: " + soma, "A subtração é: " + subtracao, "A multiplicação é: " + multiplicacao, "A divisão é: " + divisao)
+*/
+
+let resultado = 10 == 10
+console.log(resultado)
+
+let resultado2 = 10 != 5
+console.log(resultado2)
+
+let resultado3 = 10 > 5
+console.log(resultado3)
+
+let resultado4 = 10 <= 10
+console.log(resultado4)
