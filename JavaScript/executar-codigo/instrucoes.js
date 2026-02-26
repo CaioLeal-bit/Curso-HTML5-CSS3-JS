@@ -46,10 +46,34 @@ console.log(resultado3)
 
 let resultado4 = 10 <= 10
 console.log(resultado4)
-*/
+
 let idade = 17
 if (idade >= 18) {
     console.log("Você é maior de idade.")
 }else{
     console.log("Você é menor de idade.")
 }
+*/
+
+let opcao = 7
+
+switch(opcao){
+    case 1:
+        console.log("Opção 1 selecionada.")
+        break
+
+    case 2:
+        console.log("Opção 2 selecionada.")
+        break
+
+    case 3:
+        console.log("Opção 3 selecionada.")
+        break
+
+    default:
+        console.log("Opção inválida.")
+}
+
+let idade = 20
+
+idade>= 18 ? "Maior idade" : "Menor idade"
