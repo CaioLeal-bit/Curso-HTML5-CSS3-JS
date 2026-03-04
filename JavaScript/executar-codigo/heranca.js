@@ -17,6 +17,11 @@ class Animal{ //Superclasse ou classe pai
 
 class Cao extends Animal{ //Subclasse ou classe filha
 
+    constructor(){
+        super()
+        this.tamanhoOrelha = 0
+    }
+
     latir(){
         console.log("O cachorro está latindo.")
     }
@@ -29,5 +34,13 @@ class Passaro extends Animal{ //Subclasse ou classe filha
     }
 }
 
+class Papagaio extends Passaro{
+
+    falar(){    
+        console.log("O papagaio está falando.")
+    }
+}
+
 const cao = new Cao();
 const passaro = new Passaro();
+const papagaio = new Papagaio();
