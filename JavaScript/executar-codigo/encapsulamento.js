@@ -1,13 +1,51 @@
 //pilar - Encapsulamento
-class Carro{
+// class Carro{
+//     constructor(){
+//         this.marca = "Gol"
+//         this.cor = "Vermelho"
+//     }
+
+//     frear(){
+//         console.log("O carro está freando.")
+//     }
+// }
+
+// const carro = new Carro();
+
+class ContaBancaria{
     constructor(){
-        this.marca = "Gol"
-        this.cor = "Vermelho"
+        this._numeroConta = 0
+        this.saldo = 0
     }
 
-    frear(){
-        console.log("O carro está freando.")
+    sacar(valorSaque){
+        this.saldo = this.saldo - valorSaque
     }
-}
 
-const carro = new Carro();
+    depositar(valorDeposito){
+        this.saldo = this.saldo + valorDeposito
+    }
+
+    get saldo(){
+        return this._saldo
+    }
+
+    set saldo(valor){
+        if(valor >= 0){
+            this._saldo = valor
+        }
+    }
+
+    get numeroConta(){
+        return this._numeroConta
+    }
+
+    set numeroConta(numero){
+        if(numero > 0){
+            this._numeroConta = numero + 1
+        }
+    }
+}    
+
+const conta = new ContaBancaria();
+conta._numeroConta = 1;
