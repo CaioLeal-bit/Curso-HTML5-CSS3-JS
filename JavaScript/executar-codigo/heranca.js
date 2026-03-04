@@ -1,9 +1,9 @@
 //Herança
 class Animal{ //Superclasse ou classe pai
-    constructor(){
-        this.cor = ""
-        this.tamanho = 0
-        this.peso = 0
+    constructor(cor, tamanho, peso){
+        this.cor = cor
+        this.tamanho = tamanho
+        this.peso = peso
     }
 
     correr(){
@@ -17,9 +17,9 @@ class Animal{ //Superclasse ou classe pai
 
 class Cao extends Animal{ //Subclasse ou classe filha
 
-    constructor(){
-        super()
-        this.tamanhoOrelha = 0
+    constructor(cor, tamanho, peso, tamanhoOrelha){
+        super(cor, tamanho, peso, tamanhoOrelha)
+        this.tamanhoOrelha = tamanhoOrelha
     }
 
     latir(){
@@ -28,7 +28,11 @@ class Cao extends Animal{ //Subclasse ou classe filha
 }
 
 class Passaro extends Animal{ //Subclasse ou classe filha
-    
+
+    constructor(cor, tamanho, peso){
+        super(cor, tamanho, peso)
+    }
+
     voar(){
         console.log("O pássaro está voando.")
     }
@@ -36,11 +40,17 @@ class Passaro extends Animal{ //Subclasse ou classe filha
 
 class Papagaio extends Passaro{
 
+    constructor(cor, tamanho, peso, sabeFalar){
+        super(cor, tamanho, peso, sabeFalar)
+        this.sabeFalar = sabeFalar
+    }
+
     falar(){    
         console.log("O papagaio está falando.")
     }
 }
 
-const cao = new Cao();
-const passaro = new Passaro();
-const papagaio = new Papagaio();
+// const animal = new Animal("preta", 10, 5);
+// const cao = new Cao("marrom", 20, 10, 5);
+// const passaro = new Passaro();
+// const papagaio = new Papagaio();
