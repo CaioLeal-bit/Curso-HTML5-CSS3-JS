@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Elementos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <img id="imagem" src="../img/celular.png" width="500"">
+    <a id="link" href="https://www.google.com">Clique aqui</a>
+
+    <button onclick="alterar()" id="botao">Clique aqui</button>
+
+    <script>
+
+        // const imagem = document.querySelector('#imagem')
+        // console.log(imagem.getAttribute('width'))
+        
+        // const link = document.querySelector('#link')
+        // console.log(link.getAttribute('href'))
+
+        function alterar() {
+            // const img = document.querySelector('#imagem')
+            // img.src = "../img/grafico.png"
+
+            const link = document.querySelector('#link')
+            link.setAttribute('href', 'https://www.youtube.com')
+        }
+
+    </script>
+
+</body>
+</html>
